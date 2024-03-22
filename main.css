@@ -1,0 +1,384 @@
+* {
+    text-decoration: none !important;
+}
+h1{
+    font-weight: 600 !important;
+}
+
+nav {
+    background-color: #fff;
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+    padding: 0 50px;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+.brand a:first-child:hover{
+    background-color: #fff !important;
+    cursor: pointer !important;
+}
+
+nav .btn a {
+    color: #fff;
+}
+
+nav .btn a:hover {
+    background-color: #fd6f01;
+    color: #fff;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* height: 80vh; */
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+.hideOnMobile {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media(max-width:400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.img-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.text-col .btn {
+    width: 150px;
+}
+
+.text-1 {
+    font-size: 20px;
+}
+
+.text-2 {
+    font-size: 28px;
+    color: #fd7308;
+}
+
+.text-3 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.text-4 {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.text-5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.text-6 {
+    font-size: 16px;
+    /* color: #fe8221; */
+}
+
+.text-7 {
+    font-size: 16px;
+    color: #fe8221;
+}
+
+@media(max-width:800px) {
+    .text-3 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:800px) {
+    .text {
+        text-align: center;
+    }
+}
+
+.servic-card {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    transition: .1s linear;
+}
+
+.servic-card:hover {
+    scale: 1.05;
+}
+
+/* ----------------------input range-------------------------- */
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    height: 10px;
+    background: #f50;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #f50 !important;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: #f50;
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+/* Hover, active & focus Thumb: Webkit */
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 10px rgba(255, 85, 0, .1)
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 13px rgba(255, 85, 0, .2)
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 13px rgba(255, 85, 0, .2)
+}
+
+/* Hover, active & focus Thumb: Firfox */
+
+input[type="range"]::-moz-range-thumb:hover {
+    box-shadow: 0 0 0 10px rgba(255, 85, 0, .1)
+}
+
+input[type="range"]:active::-moz-range-thumb {
+    box-shadow: 0 0 0 13px rgba(255, 85, 0, .2)
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 13px rgba(255, 85, 0, .2)
+}
+
+/* ------------------------------input range----------------------- */
+
+/* ------------------------------btn-filter------------------------ */
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    float: left;
+    line-height: 15px;
+    margin: 2px;
+    display: none;
+    /* Hidden by default */
+}
+
+.filterDiv img {
+    border-radius: 15px;
+    width: 100% !important;
+}
+
+.card-img {
+    width: 100% !important;
+    height: 250px !important;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+    background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+/* ------------------------------ btn-filter ------------------------ */
+
+/* ------------------------------ carousel -------------------------- */
+.radius-icon {
+    width: 3rem !important;
+    height: .5rem !important;
+    display: inline-block !important;
+    background-color: #fd6f01 !important;
+}
+
+.carousel-card {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px 0 0 15px;
+    background-color: #f8f8f8;
+
+}
+
+@media(max-width:800px) {
+    .carousel-card {
+        border-radius: 15px 15px 0 0;
+    }
+}
+@media(max-width:800px) {
+    .carousel-card img {
+        width: 60% !important;
+    }
+}
+
+.carousel-card-2 {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 15px 15px 0;
+    background-color: #f8f8f8;
+}
+
+@media(max-width:800px) {
+    .carousel-card-2 {
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+/* ------------------------------ carousel -------------------------- */
+
+/* ------------------------------ contact me ------------------------ */
+.inp {
+    border-radius: 8px !important;
+    padding: 1.4rem !important;
+    background-color: #f8f8f8 !important;
+}
+
+.input-group .btn {
+    border-radius: 8px !important;
+}
+
+/* ------------------------------ contact me ------------------------ */
+
+/* ------------------------------ footer-row ------------------------ */
+.footer-row {
+    /* height: 30vh; */
+    background-color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-row2 {
+    background-color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-text {
+    padding: 1rem;
+}
+
+.f-text:hover {
+    background-color: #f0f0f0;
+}
+
+.f-text a {
+    color: black;
+}
+
+/* ------------------------------ footer-row ------------------------ */

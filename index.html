@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/css/shared.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+        integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- Navbar -->
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="img/close_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="btn btn-orange">
+                        <a href="#">Dowlaod Cv</a>
+                    </button>
+                </li>
+            </ul>
+            <ul>
+                <li class="brand"><a href="#"><img src="img/logo.png" style="width: 200px;"></a></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About me</a></li>
+                <li class="hideOnMobile"><a href="#services">Services</a></li>
+                <li class="hideOnMobile"><a href="#project">Project</a></li>
+                <li class="hideOnMobile"><a href="#testimonial">Testimonial</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="hideOnMobile ml-3">
+                    <button class="btn btn-orange">
+                        <a href="#">Dowlaod Cv</a>
+                    </button>
+                </li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img
+                            src="img/menu_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+            </ul>
+        </nav>
+        <!-- /Navbar -->
+        <div class="row">
+            <div class="col-lg-6 text-col">
+                <b class="text-1 offset-2">Hi I am</b>
+                <b class="text-2 offset-2">Muhammad Umair</b>
+                <h1 class="text-3 offset-2">UI & UX</h1>
+                <h1 class="text-3 offset-5">Designer</h1>
+                <div class="w-75 my-4 offset-2">
+                    <span class="text-4">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus
+                        netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</span>
+                </div>
+                <button class="btn btn-orange offset-2">Hire Me</button>
+            </div>
+            <div class="col-lg-6 img-col">
+                <img src="img/Group 2.png" class="w-70">
+                <div class="d-flex my-3">
+                    <a href="#" class="m-2"><img src="img/Facebook - Negative.png" alt=""></a>
+                    <a href="#" class="m-2"><img src="img/Twitter - Negative.png" alt=""></a>
+                    <a href="#" class="m-2"><img src="img/Instagram - Negative.png" alt=""></a>
+                    <a href="#" class="m-2"><img src="img/LinkedIn - Negative.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!------------------------ About Me ---------------------------------->
+        <div class="row my-4" id="about">
+            <div class="col-lg-6 d-flex justify-content-center p-0">
+                <img src="img/Group 7.png" class="w-70">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="offset-4 offset-lg-0">About Me</h1>
+                <div class="w-85 my-4 text offset-1 offset-lg-0">
+                    <span class="text-4">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus
+                        netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</span>
+                </div>
+                <form action="#" class="w-85 p-2 offset-1 offset-lg-0">
+                    <label class="text-4" for="range1">UX</label>
+                    <input type="range" min="0" max="100" value="90" id="range1" />
+
+                    <label class="text-4 my-2" for="range2">Website Design</label>
+                    <input type="range" min="0" max="100" value="85" id="range2" />
+
+                    <label class="text-4 my-2" for="range3">App Design</label>
+                    <input type="range" min="0" max="100" value="97" id="range3" />
+
+                    <label class="text-4 my-2" for="range4">Graphic Design</label>
+                    <input type="range" min="0" max="100" value="90" id="range4" />
+                </form>
+            </div>
+        </div>
+        <!------------------------ About Me ---------------------------------->
+
+        <!------------------------ Services ---------------------------------->
+        <div class="row justify-content-center my-4" id="services">
+            <div class="col-lg-6">
+                <div class="d-flex flex-column text-center">
+                    <h1>Services</h1>
+                    <span class="text-4 mt-2">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
+                        lectus
+                        netus in. Aliquet donec morbi convallis pretium</span>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8 col-lg-2 col-md-4 servic-card">
+                <img src="img/Vector-01.png" class="w-20">
+                <p class="text-5 mt-3">UI/UX</p>
+                <span class="text-6">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</span>
+            </div>
+            <div class="col-8 col-lg-2 col-md-4 servic-card">
+                <img src="img/Layer_1.png" style="width: 65px !important;">
+                <p class="text-5 mt-3">Web Design</p>
+                <span class="text-6">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</span>
+            </div>
+            <div class="col-8 col-lg-2 col-md-4 servic-card">
+                <img src="img/Group 18.png" style="width: 42px !important;">
+                <p class="text-5 mt-3">App Design</p>
+                <span class="text-6">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</span>
+            </div>
+            <div class="col-8 col-lg-2 col-md-4 servic-card">
+                <img src="img/Vector (1).png" class="w-20">
+                <p class="text-5 mt-3">Graphic Design</p>
+                <span class="text-6">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</span>
+            </div>
+        </div>
+        <!------------------------ Services ---------------------------------->
+
+        <!------------------------ My Project -------------------------------->
+        <div class="row justify-content-center mt-5" id="project">
+            <div class="col-lg-6">
+                <div class="d-flex flex-column text-center">
+                    <h1>My Project</h1>
+                    <span class="text-4 mt-2">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
+                        lectus
+                        netus in. Aliquet donec morbi convallis pretium</span>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-12 my-4 text-center" id="myBtnContainer">
+                <button class="btn btn btn-white mx-1 active" onclick="filterSelection('all')">All</button>
+                <button class="btn btn btn-white mx-1" onclick="filterSelection('ui')">UI/UX</button>
+                <button class="btn btn btn-white mx-1" onclick="filterSelection('web')">Web Design</button>
+                <button class="btn btn btn-white mx-1" onclick="filterSelection('app')">App Design</button>
+                <button class="btn btn btn-white mx-1 my-lg-0 my-3" onclick="filterSelection('graphic')">Graphic
+                    Design</button>
+            </div>
+            <div class="col-7 col-lg-3 m-3 p-0 filterDiv web">
+                <img src="img/Group 24.png" class="img-fluid">
+                <p class="text-7 mt-4">Web Design</p>
+                <b>AirCalling Landing Page Design</b>
+            </div>
+            <div class="col-7 col-lg-3 m-3 p-0 filterDiv web">
+                <img src="img/Group 26.png" class="img-fluid">
+                <p class="text-7 mt-4">Web Design</p>
+                <b>Business Landing Page Design</b>
+            </div>
+            <div class="col-7 col-lg-3 m-3 p-0 filterDiv web">
+                <img src="img/Group 27.png" class="img-fluid">
+                <p class="text-7 mt-4">Web Design</p>
+                <b>Ecom Web Page Design</b>
+            </div>
+            <div class="col-7 col-lg-3 m-3 p-0 filterDiv ui">
+                <img src="img/nike.jpg" class="card-img">
+                <p class="text-7 mt-4">UI/UX Design</p>
+                <b>Nike air sneaker look</b>
+            </div>
+            <div class="col-7 col-lg-3 m-3 p-0 filterDiv ui">
+                <img src="img/ui.png" class="card-img">
+                <p class="text-7 mt-4">UI/UX Design</p>
+                <b>Mobile app UI/UX design</b>
+            </div>
+            <div class="col-7 col-lg-3 m-3 p-0 filterDiv app">
+                <img src="img/Iphone.jpg" class="card-img">
+                <p class="text-7 mt-4">App Design</p>
+                <b>Popular foods mobile App design</b>
+            </div>
+            <div class="col-7 col-lg-3 m-3 p-0 filterDiv app">
+                <img src="img/Iphone2.jpg" class="card-img">
+                <p class="text-7 mt-4">App Design</p>
+                <b>Beautiful Furniture Mobile App Design</b>
+            </div>
+            <div class="col-7 col-lg-3 m-3 p-0 filterDiv graphic">
+                <img src="img/graphis.jpg" class="card-img">
+                <p class="text-7 mt-4">Graphis Design</p>
+                <b>Perfect Graphis design of any type</b>
+            </div>
+            <div class="col-7 col-lg-3 m-3 p-0 filterDiv graphic">
+                <img src="img/graphis2.jpg" class="card-img">
+                <p class="text-7 mt-4">Graphis Design</p>
+                <b>Unrepeatable and excellent Graphis design</b>
+            </div>
+        </div>
+        <!------------------------ My Project -------------------------------->
+
+        <!------------------------ Testimonials ------------------------------->
+        <div class="row justify-content-center my-4" id="testimonial">
+            <div class="col-lg-6">
+                <div class="d-flex flex-column text-center mt-4">
+                    <h1>Testimonials</h1>
+                    <span class="text-4 mt-2">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
+                        lectus
+                        netus in. Aliquet donec morbi convallis pretium</span>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-12 p-0">
+                <div class="carousel slide" data-ride="carousel" id="myCarousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-8 col-lg-2 col-md-2 carousel-card p-4">
+                                    <img src="img/Ellipse 10.png" class="img-fluid">
+                                </div>
+                                <div class="col-lg-5 col-8 carousel-card-2 p-4">
+                                    <div class="w-100">
+                                        <img src="img/ic1.png" style="width: 10px;height: 10px;"><br>
+                                        Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo
+                                        urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum
+                                        convallis dignissim malesuada commodo ultrices.
+                                        <img src="img/ic1.png" style="width: 10px;height: 10px;"><br><br>
+                                        <span class="font-weight-bold mt-2">Name</span>
+                                        <p class="mt-1">CEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-8 col-lg-2 col-md-2 carousel-card p-4">
+                                    <img src="img/Ellipse 11.png" class="img-fluid">
+                                </div>
+                                <div class="col-lg-5 col-8 carousel-card-2 p-4">
+                                    <div class="w-100">
+                                        <img src="img/ic1.png" style="width: 10px;height: 10px;"><br>
+                                        Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo
+                                        urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum
+                                        convallis dignissim malesuada commodo ultrices.
+                                        <img src="img/ic1.png" style="width: 10px;height: 10px;"><br><br>
+                                        <span class="font-weight-bold mt-2">Name</span>
+                                        <p class="mt-1">JOHN</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-8 col-lg-2 col-md-2 carousel-card p-4">
+                                    <img src="img/Mask Group (1).png" class="w-100">
+                                </div>
+                                <div class="col-lg-5 col-8 carousel-card-2 p-4">
+                                    <div class="w-100">
+                                        <img src="img/ic1.png" style="width: 10px;height: 10px;"><br>
+                                        Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo
+                                        urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum
+                                        convallis dignissim malesuada commodo ultrices.
+                                        <img src="img/ic1.png" style="width: 10px;height: 10px;"><br><br>
+                                        <span class="font-weight-bold mt-2">Name</span>
+                                        <p class="mt-1">ALEX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br><br>
+                    <ul class="carousel-indicators">
+                        <li class="active radius-icon" data-slide-to="0" data-target="#myCarousel"></li>
+                        <li data-slide-to="1" data-target="#myCarousel" class="radius-icon"></li>
+                        <li data-slide-to="2" data-target="#myCarousel" class="radius-icon"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!------------------------ Testimonials ------------------------------->
+
+        <!------------------------ Contact Me --------------------------------->
+        <div class="row d-flex flex-column align-items-center my-4">
+            <div class="col-lg-6 d-flex flex-column align-items-center">
+                <div class="text-center mt-4">
+                    <h1>Lets Design Together</h1>
+                    <span class="text-4 mt-2">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
+                        lectus
+                        netus in. Aliquet donec morbi convallis pretium</span>
+                </div>
+                <form action="#" class="w-85 my-4">
+                    <div class="input-group">
+                        <input type="email" class="form-control inp" placeholder="Enter Your Email">
+                        <button class="btn btn-orange ml-3">Contact Me</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!------------------------ Contact Me --------------------------------->
+
+        <!------------------------ Footer ------------------------------------->
+        <footer>
+            <div class="row footer-row" id="contact">
+                <div class="col-12 my-4">
+                    <img src="img/logo.png" class="m-auto" width="250px">
+                </div>
+                <div class="col-7 col-lg-1 col-md-2 f-text">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="col-7 col-lg-1 col-md-2 f-text">
+                    <a href="#about">About Me</a>
+                </div>
+                <div class="col-7 col-lg-1 col-md-2 f-text">
+                    <a href="#services">Services</a>
+                </div>
+                <div class="col-7 col-lg-1 col-md-2 f-text">
+                    <a href="#project">Projects</a>
+                </div>
+                <div class="col-7 col-lg-1 col-md-2 f-text">
+                    <a href="#testimonial">Testimonials</a>
+                </div>
+                <div class="col-7 col-lg-1 col-md-2 f-text">
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="row footer-row2">
+                <a href="#" class="my-4"><img src="img/Facebook - Negative.png" class="m-2"></a>
+                <a href="#" class="my-4"><img src="img/Twitter - Negative.png" class="m-2"></a>
+                <a href="#" class="my-4"><img src="img/Instagram - Negative.png" class="m-2"></a>
+                <a href="#" class="my-4"><img src="img/LinkedIn - Negative.png" class="m-2"></a>
+            </div>
+        </footer>
+        <!------------------------ Footer ------------------------------------->
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>
+<script src="vendor/scripts/jQuery.min.js"></script>
+<script src="vendor/scripts/popper.js"></script>
+<script src="vendor/scripts/bootstrap.min.js"></script>
+<script src="vendor/scripts/app.js"></script>
