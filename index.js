@@ -100,3 +100,21 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 // Filter //
+
+// Scroll effect //
+    function reveal() {
+        let elems = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
+
+        for (let i = 0; i < elems.length; i++) {
+            let windowHeight = window.innerHeight;
+            let elementTop = elems[i].getBoundingClientRect().top;
+            let elementVisible = 120;
+
+            if (elementTop < windowHeight - elementVisible) {
+                elems[i].classList.add("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
+    reveal();
